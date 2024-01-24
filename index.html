@@ -1,8 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -16,37 +13,95 @@
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         
-        <!--For Plugins external css-->
-        <link rel="stylesheet" href="assets/css/plugins.css" />
         <!--Theme custom css -->
         <link rel="stylesheet" href="assets/css/style.css">
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
+<style>
+
+    .container {
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .semi-circle {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+    }
+    .semi-circle a{
+       color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16.4px;
+    }
+    .box {
+        width: 200px; 
+        height: 40px;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Posicionamiento específico para cada cuadro */
+    .box:nth-child(1) { bottom: 12%; left: 16%; }
+    .box:nth-child(2) { bottom: 55%; left: 19%; }
+    .box:nth-child(3) { bottom: 70%; left: 50%; }
+    .box:nth-child(4) { bottom: 55%; left: 85%; }
+    .box:nth-child(5) { bottom: 9%; left: 88%; }
+
+    .center-image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55vw; /* Ancho de la imagen */
+        z-index: -1; /* Asegúrate de que la imagen esté detrás de los cuadros */
+    }
+
+    .center-image img {
+        width: 100%;
+        height: max-content;
+    }
+</style>
+
+
 <body>
+
 <header class="header">
     <div class="top-nav">
         <div class="logo-container">
             <img src="assets/images/OMS-removebg-.png" alt="OMS Logo" class="logo"> <!-- Asegúrate de reemplazar con la ruta correcta del logo -->
         </div>
         <div class="nav-links">
-            <a href="#">Sitio web mundial</a>
+            <a href="index.html">Sitio web mundial</a>
             <a href="#">Sitio web regionales</a>
             <a href="#">Elegir idioma</a>
         </div>
     </div>
 </header>
+
 <div class="container">
-    <div class="circle-container">
-        <div class="small-box"><span>Texto 1</span></div>
-        <div class="small-box"><span>Texto 2</span></div>
-        <div class="small-box"><span>Texto 3</span></div>
-        <!-- Agrega más cuadros según sea necesario -->
+    <div class="semi-circle">
+        <div class="box" style="background-color:#006778;" ><a href="acerca.html" >Acerca de la OMS</a></div>
+        <div class="box" style="background-color:#007a8e;" ><a  href="presencia.html">Presencia de la OMS en países</a> </div>
+        <div class="box" style="background-color:#008bab;"  ><a href="emergencia.html">Emergencia</a></div>
+        <div class="box" style="background-color:#00a6e5;"><a  href="centros.html" >Centro de prensa</a></div>
+        <div class="box" style="background-color:#00b8e2; "><a href="Temas.html" >Temas de salud</a></div>
     </div>
     <div class="center-image">
-        <img src="assets/images/Salud_Todos-removebg-preview.png" alt="Imagen central">
+        <img src="assets/images/Salud_Todos-removebg-preview.png" alt="Imagen Central">
     </div>
 </div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ body {
     /* Aplicar el degradado a la mitad exacta de la pantalla para ambos colores */
     background: linear-gradient(to bottom, #0092ca 10%, #ffffff 80%);
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Century Gothic', sans-serif;
     /* Usar flexbox para estructurar el contenido y footer adecuadamente */
     display: flex;
     flex-direction: column;
@@ -19,12 +19,8 @@ body {
 
 .content {
     flex: 1;
-    /* Añadir overflow auto para el contenido en caso de que sea muy largo */
     overflow: auto;
 }
-
-
-
 .content {
     min-height: 100%;
     flex: 1 0 auto;
@@ -41,22 +37,20 @@ body {
 }
 
 .logo-container .logo {
-    height: 100px; /* Ajustar según el tamaño deseado del logo */
+    height: 120px; /* Ajustar según el tamaño deseado del logo */
 }
-
 .nav-links a {
     display: inline-block;
     background-color: transparent; /* Fondo transparente */
     color: #1d4c78;
-    padding: 10px 20px;
+    padding: 0 15px;
     margin: 0 10px;
-    border: 5px solid #1d4c78; /* Bordes de color azul */
-    border-radius: 25px;
+    border: 2px solid #1d4c78; /* Bordes de color azul */
+    border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición para fondo, color de texto y bordes */
 }
-
 .nav-links a:hover {
     background-color: #005EB8; /* Color de fondo al pasar el mouse sobre los enlaces */
 }
@@ -75,57 +69,3 @@ body {
         margin-bottom: 5px;
     }
 }
-
-.container {
-    position: relative;
-    text-align: center;
-    height: 50vh; /* Asegúrate de que la altura del contenedor sea toda la pantalla */
-    overflow: hidden;
-}
-
-.circle-container {
-    position: absolute;
-    bottom: 10%; /* Ajuste de la posición desde la parte inferior de la pantalla */
-    left: 50%;
-    transform: translate(-50%, 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100; /* Asegúrate de que esta capa esté por encima de la imagen */
-}
-
-.small-box {
-    width: 50px;
-    height: 50px;
-    background-color: #FFF;
-    border-radius: 5px;
-    margin: 0 10px; /* Ajusta el espaciado según necesites */
-    /* Ajusta el transform para que se coloquen en semicírculo */
-}
-.circle-container::before {
-    content: '';
-    position: absolute;
-    width: 400px; /* Ajusta el ancho del arco */
-    height: 200px; /* Ajusta la altura del arco */
-    border-radius: 400px / 200px;
-    border: 1px solid transparent;
-    border-bottom: none;
-    border-top-color: #FFF; /* El color del borde superior es blanco */
-    transform: translate(-50%, -100%);
-    z-index: -1; /* Asegúrate de que esté detrás de los cuadros */
-}
-.center-image {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 750px; /* Ajusta el tamaño de la imagen */
-    height: auto;
-    z-index: 10; /* La imagen debe estar por encima del fondo pero debajo de los cuadros */
-}
-
-.center-image img {
-    width: 100%;
-    height: auto;
-}
-
