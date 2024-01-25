@@ -18,6 +18,7 @@
     <!--Theme Responsive css-->
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body >
@@ -34,6 +35,7 @@
         </div>
     </div>
 </header>
+
 <nav class="menu">
     <a href="Temas.html" class="menu-item salud active" >Temas de salud</a>
     <a href="centros.html" class="menu-item prensa">Centro de prensa</a>
@@ -41,6 +43,23 @@
     <a href="presencia.html" class="menu-item presencia">Presencia de la OMS en países</a>
     <a href="acerca.html" class="menu-item acercade">Acerca de la OMS</a>
 </nav>
+
+<div class="custom-nav-header">TEMAS DE SALUD</div>
+<div class="custom-nav-container">
+    <div class="custom-nav-bar">
+        <button class="custom-filter-btn">Filtrar por enfermedades  <i class="fas fa-angle-down"></i></button>
+        <div class="custom-dropdown-content">
+            <a href="#">Infecciones de Transmición Sexual</a>
+            <a href="#">Nutrición</a>
+            <a href="#">Promoción de la Salud</a>
+            <a href="#">Salud y Bienestar</a>
+            <a href="#">Vacunación/inmunización</a>
+        </div>
+        <input type="text" class="custom-search-input" placeholder="Búsqueda por palabra clave">
+    </div>
+</div>
+
+
 <div class="body-wrapper">
     <div class="content">
         <img src="assets/images/background.png" alt="Descripción de la imagen" class="imagen-div" />
@@ -62,5 +81,25 @@
 </footer>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var filterBtn = document.querySelector('.custom-filter-btn');
+        var dropdownContent = document.querySelector('.custom-dropdown-content');
+
+        filterBtn.addEventListener('click', function() {
+            dropdownContent.classList.toggle('show');
+        });
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.custom-filter-btn')) {
+                if (dropdownContent.classList.contains('show')) {
+                    dropdownContent.classList.remove('show');
+                }
+            }
+        };
+    });
+</script>
 </body>
+
+
 </html>
