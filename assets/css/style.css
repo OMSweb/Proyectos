@@ -51,8 +51,31 @@ body {
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición para fondo, color de texto y bordes */
 }
+
+/* Estilos para el menú desplegable */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    border-radius: 0;
+    background-color: #00b7e1;
+    border: 2px solid #00a5e4;
+}
+
+.language-dropdown:hover .dropdown-content {
+    display: block;
+}
 .nav-links a:hover {
-    background-color: #005EB8; /* Color de fondo al pasar el mouse sobre los enlaces */
+    background-color: #5ab6dd; /* Color de fondo al pasar el mouse sobre los enlaces */
 }
 
 /* Media query para ajustar el diseño en pantallas más pequeñas */
