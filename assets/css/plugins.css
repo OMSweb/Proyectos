@@ -265,3 +265,269 @@ body {
 .custom-dropdown-content a:hover {background-color: #00a5e4;}
 
 /* Agrega tus estilos existentes aquí */
+.body-wrapper2 {
+  background-color: #ffffff; /* O el color de fondo que prefieras */
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Esto asegura que los elementos están distribuidos uniformemente */
+}
+
+.content2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* Ajusta los elementos uniformemente */
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.health-topic {
+  flex-basis: 18%; /* Ajusta este valor para que encaje en la pantalla, dependiendo de los márgenes */
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.health-topic .topic-title {
+  padding: 5px;
+  margin-bottom: 10px; /* Espacio entre el título y la imagen */
+  background-color: #add0e0; /* Fondo blanco para el título */
+  height: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Opcional: sombra para el título */
+}
+
+.health-topic img {
+  max-width: 230px; /* Ancho fijo para todas las imágenes */
+  height: auto; /* Para mantener la proporción de las imágenes */
+  mix-blend-mode: darken;
+}
+
+/* CENTROS*/
+/* CENTROS*/
+/* CENTROS*/
+/* CENTROS*/
+
+.news-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre tarjetas */
+}
+
+.news-item {
+  width: calc(25% - 20px); /* Ajusta este valor para que haya 4 elementos por fila y se considera el gap */
+  margin-bottom: 20px; /* Espacio debajo de cada tarjeta */
+
+}
+
+.news-title {
+  padding: 10px;
+  background-color: #00a6e5;
+  font-size: 20px;
+  margin-bottom: 15px; /* Margen debajo del título */
+  text-align: center;
+  width: 85%;
+  margin-left: auto; /* Centra el elemento horizontalmente */
+  margin-right: auto; /* Centra el elemento horizontalmente */
+}
+
+.news-item img {
+  max-height: 420px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio asignado sin perder proporciones */
+  margin-left: 8%;
+  max-width: 270px;
+  mix-blend-mode: darken;
+}
+
+.news-item p {
+  font-size: 14px; /* Tamaño de fuente para el texto debajo de la imagen */
+  color: #0c588a;
+  font-weight: bold;
+  margin-left: 8%;
+  width: 85%;
+}
+
+
+/* EMERGENCIAS */
+/* EMERGENCIAS */
+/* EMERGENCIAS */
+/* EMERGENCIAS */
+
+.emergency-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* El color de fondo puede variar según tu diseño */
+  border: 3px solid #e34258; /* El borde de la sección completa */
+  color: #07073f;
+  z-index: 0;
+  width: 96%;
+  margin-left: auto; /* Centra el elemento horizontalmente */
+  margin-right: auto; /* Centra el elemento horizontalmente */
+  position: relative;
+  margin-top: -15px;
+}
+
+.emergency-title {
+  background-color: #008bab;
+  color: white;
+  text-align: center;
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  width: 22%;
+  margin-left: auto; /* Centra el elemento horizontalmente */
+  margin-right: auto; /* Centra el elemento horizontalmente */
+  z-index: 1;
+  position: relative;
+  margin-top: 10px;
+}
+
+.emergency-content {
+  display: flex;
+}
+
+.left-panel, .center-panel, .right-panel {
+  padding: 10px;
+}
+
+.left-panel {
+  flex: 1; /* Opcionalmente puedes ajustar la proporción de flex para cada panel */
+}
+
+.center-panel {
+  flex: 1; /* Ajusta este valor según sea necesario */
+}
+
+.right-panel {
+  flex: 1; /* Ajusta este valor según sea necesario */
+}
+
+.center-panel img {
+  width: 77%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+  height: auto;
+  margin-bottom: 10px; /* Espacio entre las imágenes */
+  margin-top: 25px;
+}
+.left-panel h2{
+  color: rgb(227, 66, 88);
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 80px;
+}
+.right-panel P {
+  margin-top: 35px;
+  margin-left: -35PX;
+  font-size: 15px;
+}
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px; /* Espacio encima de las estadísticas */
+}
+
+.statistics .cases, .statistics .deaths, .statistics .vaccinations {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.number {
+  font-size: 20px; /* Tamaño de fuente grande para los números */
+  font-weight: bold;
+  color: rgb(227, 66, 88)
+}
+
+.label {
+  font-size: 14px; /* Tamaño de fuente menor para las etiquetas */
+  color: #231f20;
+}
+
+/*PRESENCIA*/
+/*PRESENCIA*/
+/*PRESENCIA*/
+/*PRESENCIA*/
+
+.global-presence-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.region-descriptions {
+  width: 40%; /* Ajusta este valor para dejar espacio para el mapa */
+  margin-left: -10px; /* Centra el elemento horizontalmente */
+  margin-right: auto;
+}
+.region {
+  width: 80%;
+  background-color: rgb(197, 207, 213);
+  margin-left: 30px; /* Centra el elemento horizontalmente */
+  margin-right: auto; /* Centra el elemento horizontalmente */
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.region h4{
+  color: #0d5772;
+  display: inline; /* Mantiene el título en la misma línea que el párrafo */
+  font-weight: bolder; /* Si quieres que el título sea más grueso */
+  margin: 0; /* Elimina cualquier margen por defecto */
+}
+.region p{
+  color: #0d5772;
+  display: inline; /* Mantiene el párrafo en la misma línea que el título */
+  margin: 0; /* Elimina cualquier margen por defecto */
+  text-align: justify; /* Justifica el texto del párrafo si es necesario */
+
+  font-size: 13px;
+}
+.descriptions{
+  width: 72%;
+  background-color: rgb(0, 122, 142);
+  margin-left: 50px; /* Centra el elemento horizontalmente */
+  padding: 1px;
+  text-align: center;
+ 
+}
+.world-map {
+  width: 60%; /* Ajusta este valor según sea necesario */
+}
+
+.world-map img {
+  width: 100%;
+  height: auto; /* Asegura que la imagen mantenga su proporción */
+
+  mix-blend-mode: darken;
+}
+/*APOYO*/
+/*APOYO*/
+/*APOYO*/
+/*APOYO*/
+/*APOYO*/
+.info-section {
+  display: flex;
+  justify-content: space-around; /* Distribuye los bloques de manera uniforme */
+  flex-wrap: wrap; /* Permite que los bloques pasen a la siguiente línea en pantallas pequeñas */
+}
+
+.info-block {
+  flex: 1 1 25%; /* Los bloques deben crecer y encogerse según sea necesario, pero iniciar en 25% */
+ 
+  overflow: hidden; /* Asegura que todo el contenido se ajuste dentro de los bloques */
+}
+
+.info-block h4 {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.info-block img {
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.info-block p {
+  color: white;
+  padding: 10px;
+  font-size: 14px; /* Ajusta esto según la tipografía de tu sitio */
+  text-align: center;
+}
+
