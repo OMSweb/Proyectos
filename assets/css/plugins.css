@@ -17,12 +17,12 @@ body {
 }
 
 .content {
-  min-height: 100%;
   flex: 1 0 auto;
   /* Estilos para el div content */
   position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este div */
-  width: 100%; /* Ancho del div */
+  width: 90%; /* Ancho del div */
   height: 100%; /* Altura del div */
+  margin-left: 65px;
 }
 
 .imagen-div {
@@ -31,8 +31,10 @@ body {
   width: 100%; /* Ancho al 100% del div .content */
   height: 100%; /* Altura al 100% del div .content */
   mix-blend-mode: darken;
-  
+  z-index: 0;
 }
+
+
 .header {
   min-height: 100%;
   margin: 0;
@@ -205,6 +207,14 @@ body {
   padding: 0 15px;
 }
 
+
+.social-icon img {
+  width: 24px; /* Ajusta el ancho para igualar el tamaño de los íconos */
+  height: 24px; /* Ajusta la altura para igualar el tamaño de los íconos */
+  object-fit: contain; /* Mantiene la proporción de la imagen sin recortarla */
+  vertical-align: middle; /* Alinea verticalmente con otros elementos */
+  filter: hue-rotate(40deg)
+}
 .custom-nav-header {
   text-align: left;
   color: #00b8e4;
