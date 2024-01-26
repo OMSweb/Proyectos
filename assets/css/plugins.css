@@ -213,7 +213,6 @@ body {
   height: 24px; /* Ajusta la altura para igualar el tamaño de los íconos */
   object-fit: contain; /* Mantiene la proporción de la imagen sin recortarla */
   vertical-align: middle; /* Alinea verticalmente con otros elementos */
-  filter: hue-rotate(40deg)
 }
 .custom-nav-header {
   text-align: left;
